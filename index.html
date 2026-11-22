@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Thread - Clothing Store Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Urban Thread</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#checkout">Checkout</a>
+      <span id="cart-count">Cart (0)</span>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>Naye Season ka Collection</h2>
+    <p>Asan order, fast delivery aur best quality.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <main>
+    <section id="products">
+      <h2>Products</h2>
+      <div class="grid" id="product-list"></div>
+    </section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p class="total">Total: Rs <span id="cart-total">0</span></p>
+    </section>
+
+    <section id="checkout">
+      <h2>Checkout</h2>
+      <p class="note">Ye ek demo store hai. Order sirf screen par dikhega.</p>
+      <form id="order-form">
+        <input type="text" id="name" placeholder="Aap ka naam" required>
+        <input type="tel" id="phone" placeholder="Phone number" required>
+        <textarea id="address" placeholder="Delivery address" required></textarea>
+        <button type="submit" class="btn">Order Place Karein</button>
+      </form>
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Demo project by Ali Hassan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
